@@ -36,7 +36,7 @@ namespace Kizura
 
     void ShowHidePlayer(object? sender, EventArgs e)
     {
-      if (playerForm.Visible) { playerForm.Hide(); } else { playerForm.Show(); }
+      if (playerForm.Visible) { playerForm.Hide(); } else { playerForm.Show(); playerForm.Focus(); playerForm.TopMost = true; }
     }
     void Exit(object? sender, EventArgs e)
     {
